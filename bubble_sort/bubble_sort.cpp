@@ -1,9 +1,16 @@
 /*
-    Example of greedy algorithm use
+    Bubble sort :
+
+    Bubble sort, also called Sinking sort, is the simplest sorting algorithm that works by repeatedly swapping the adjacent elements if they are in wrong order.
+
+    Best case performance = O(n) comparisons, and O(1) swaps
+    Worst case performance = O(n^2) comparisons, and O(n^2) swaps
+    Average case performance = O(n^2) comparisons, and O(n^s) swaps
 */
 
 
 #include <iostream>
+#include "bubble_sort.h"
 
 using namespace std;
 
@@ -58,38 +65,8 @@ void bubbleSortDecreasingOrder(int * pArr, int length)
         }
     }
 }
+
 int main(void)
 {
-    int A[] = {1, 3, 4, 6, 0, 2, 6, 9};
-    int currentTime = 0;
-    int numberOfThings = 0;
-    int T = 6;
-
-    cout << "Original array: ";
-    for(int i = 0; i < 8; i++)
-    {
-        cout << A[i] << '\t';
-    }
-    cout << endl;
-
-    bubbleSortIncreasingOrder(A, 8);
-    cout << "Sorted in decreasing order: ";
-    for(int i = 0; i < 8; i++)
-    {
-        cout << A[i] << '\t';
-    }
-    cout << endl;
-
-    for(int i = 0; i < 8; i++)
-    {
-        currentTime += A[i];
-        if(currentTime > T)
-        {
-            break;
-        }
-        numberOfThings++;
-    }
-
-    cout << "Maximum number of things that can be done in " << T << " is " << numberOfThings << endl;
     return 0;
 }
