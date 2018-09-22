@@ -1,5 +1,4 @@
-  # Write an algorithm that selects both the maximal element and the minimal element from an array arr of arrSize
-    elements, using only 1.5 * arrSize comparisons.
+  # Write an algorithm that selects both the maximal element and the minimal element from an array arr of arrSize elements, using only 1.5 * arrSize comparisons.
 
     - If the array has odd number of elements, repeat one element other than the first and last element one more
         time in the array and make the new array size arrSize + 1. If the array has even number of elements, do nothing.
