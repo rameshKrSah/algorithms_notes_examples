@@ -16,6 +16,9 @@ arr = np.random.randint(0, 1000, 25);
 print("Unsorted list")
 print(arr)
 
+arr = np.sort(arr)
+print(arr)
+
 list_size = len(arr) - 1
 sorted_index = 0;
 unsorted_index = 0;
